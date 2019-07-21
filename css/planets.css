@@ -1,0 +1,432 @@
+body{margin: 0;
+  padding:0;
+    background: black;
+overflow: hidden;
+}
+.content{
+  height: 100vh;
+width: 100vw;
+
+}
+.sun {
+position:absolute;
+  top: calc(50vh - 17vw);
+  left: -17vw;
+  width: 35vw;
+  height: 35vw;
+  background: #ffdc74;
+  border-radius: 50%;
+  animation: sun 25s linear  infinite;
+
+}
+.sun2{
+  position: relative;
+  left: 2vw;
+  top: 2vw;
+  width: 30vw;
+  height: 30vw;
+  background: #ffd03c;
+    border-radius: 50%;
+
+}
+.sun3{
+position: relative;
+left: 2vw;
+top: 2vw;
+
+  width: 26vw;
+  height: 26vw;
+  background: #f7a31c;
+    border-radius: 50%;
+
+}
+@keyframes sun {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+.planets{
+display: flex;
+align-items: center;
+  position: absolute;
+  top: calc(50vh - 8vw);
+  left: 20vw;
+  justify-content: space-around;
+}
+
+.mercorbit{
+  transform-origin: -20vw;
+  animation: orbit 3s linear infinite;
+  animation-delay: 0.1s;
+
+}
+.mercury img{
+  width: 1.2vw;
+  height: 1.2vw;
+margin: 0.5vw;
+}
+.venus{
+  margin-left: 2vw;
+}
+.venusorbit{
+  transform-origin: -24vw;
+animation: orbit 5s linear infinite;
+animation-delay: 0.2s;
+
+}
+.venus img{
+  width: 3vw;
+  height: 3vw;
+}
+.earth{
+    margin-left: 2vw;
+}
+.earthorbit{
+  transform-origin: -27vw;
+animation: orbit 7s linear infinite;
+animation-delay: 0.3s;
+
+}
+.earth img{
+  width: 3vw;
+  height: 3vw;
+
+}
+.mars{
+  margin-left: 2vw;
+}
+.marsorbit{
+  transform-origin: -31vw;
+  animation: orbit 9s linear infinite;
+  animation-delay: 0.1s;
+  animation-delay: 0.4s;
+
+}
+.mars img{
+  width: 1.7vw;
+  height: 1.7vw;
+
+}
+.jupiter{
+    margin-left: 2vw;
+}
+.jupiterorbit{
+  transform-origin: -37vw;
+animation: orbit 11s linear infinite;
+animation-delay: 0.5s;
+
+
+}
+.jupiter img{
+  width: 8vw;
+  height: 8vw;
+}
+.saturn{
+    margin-left: 5vw;
+}
+.saturnorbit{
+  transform-origin: -52vw;
+animation: orbit 13s linear infinite;
+animation-delay: 0.6s;
+
+}
+.saturn img{
+  width: 12vw;
+  height: 18vw;
+    transform: rotate(-80deg);
+}
+.uran{
+    margin-left: 6vw;
+}
+.uranorbit{
+transform-origin: -70vw;
+animation: orbit 15s linear infinite;
+animation-delay: 0.7s;
+
+}
+.uran img{
+  width: 12vw;
+  height: 18vw;
+  transform: rotate(-70deg);
+}
+.neptune{
+margin-left: 6vw;
+}
+.neptuneorbit{
+  transform-origin: -90vw;
+animation: orbit 17s linear infinite;
+animation-delay: 0.8s;
+
+}
+.neptune img{
+
+  width: 14vw;
+  height: 14vw;
+  transform: rotate(-70deg);
+
+
+}
+@keyframes orbit {
+  0%{
+
+    transform:rotate(0);
+
+  }
+  100%{
+
+    transform:rotate(360deg);
+
+  }
+}
+
+.speedmenu{
+  position: fixed;
+  bottom: 5vw;
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.speedmenu button{
+  width: 5vw;
+  height: 5vw;
+  padding: 0.01vw;
+background: black;
+border: solid 0.2vw white;
+}
+
+.hidden{
+transition: all 0.1s;
+opacity: 0;
+}
+.button {
+position: absolute;
+top: 0.5vw;
+left: 0.5vw;
+
+
+}
+.button svg{
+width:4vw;
+height: 4vw;
+fill:white;
+}
+.text{
+  background: white;
+  border-radius: 2vw;
+  position: absolute;
+  font-size: 1.2vw;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.hiddentext{
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.activetext{
+  animation: textactiv 3s linear forwards;
+}
+
+.textMer{
+  top: 5vw;
+  left: 11vw;
+
+}
+.textVen{
+  top: 5vw;
+  left: 15vw;
+
+}
+.textEarth{
+  top: 5vw;
+  left: 20vw;
+
+}
+.textMarth{
+  top: 5vw;
+  left: 25vw;
+
+}
+.textJupiter{
+  top: 5vw;
+  left: 28vw;
+
+}
+.textSaturn{
+  top: 5vw;
+  left: 45vw;
+  height: auto;
+}
+.textUran{
+  top: 5vw;
+  left: 15vw;
+
+}
+.textNeptune{
+  top: 5vw;
+  left: 35vw;
+
+}
+.pactive{
+  transition: all 2s;
+  display:inline-block;
+width:10vw!important;
+height: 10vw!important;
+animation: sun 10s linear infinite;
+}
+
+
+@keyframes textactiv{
+  0%{transform-origin: bottom;
+    overflow: hidden;
+    width: 0;
+    height: 0.1vh;
+
+  }
+  50%{
+
+    width: 20vw;
+    height: 0.1vh;
+
+  }
+
+  100%{
+    width: 26vw;
+    height: 100%;
+    padding: 2vw;
+  }
+
+}
+@media screen and (max-width:768px) {
+  body{
+        overflow-y: visible;
+  }
+  .content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .planets{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+    position: static;
+margin-top: 40vw;
+    top: calc(50vh - 8vw);
+    left: 20vw;
+  }
+
+  .sun {
+  position:absolute;
+  top: -25vw;
+    left: calc(50vw - 25vw);
+width: 50vw;
+height: 50vw;
+  }
+  .sun2{
+    position: relative;
+
+    width: 45vw;
+    height: 45vw;
+    background: #ffd03c;
+      border-radius: 50%;
+
+  }
+  .sun3{
+  position: relative;
+  left: 2vw;
+  top: 2vw;
+    width: 40vw;
+    height: 40vw;
+    background: #f7a31c;
+      border-radius: 50%;
+
+  }
+
+  .mercorbit{
+    transform-origin:0 -40vw;
+
+    animation-delay: 0.1s;
+
+  }
+
+  .venus{
+    margin-top: 5vw;
+    margin-left: 0;
+  }
+  .venusorbit{
+    transform-origin:0 -50vw;
+
+
+
+  }
+  .earth{
+      margin-top: 5vw;
+      margin-left: 0;
+
+  }
+  .earthorbit{
+    transform-origin:0 -65vw;
+
+  }
+  .mars{
+    margin-top: 6vw;
+    margin-left: 0;
+
+  }
+  .marsorbit{
+    transform-origin:0 -75vw;
+
+  }
+
+  .jupiter{
+    margin-left: 0;
+
+      margin-top: 5vw;
+  }
+  .jupiterorbit{
+    transform-origin: 0 -100vw;
+  }
+
+  .saturn{
+    margin-left: 0;
+
+      margin-top: 5vw;
+  }
+  .saturnorbit{
+    transform-origin:0 -110vw;
+  animation: orbit 13s linear infinite;
+  animation-delay: 0.6s;
+
+  }
+
+  .uran{
+      margin-top: 6vw;
+      margin-left: 0;
+
+  }
+  .uranorbit{
+  transform-origin:0 -120vw;
+  }
+
+  .neptune{
+  margin-top: 6vw;
+  margin-left: 0;
+
+  }
+  .neptuneorbit{
+    transform-origin:0 -190vw;
+
+  }
+
+
+
+}
