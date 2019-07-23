@@ -38,40 +38,99 @@ neptune.classList.toggle("neptuneorbit");
 });
 mercury.addEventListener('click', function(){
   textMer.classList.toggle("hiddentext");
-  textMer.classList.toggle("activetext");
   imgmercury.classList.toggle("pactive");
+  if(textMer.classList.contains("activetext")) {
+    textMer.classList.add("deactivetext");
+    textMer.classList.remove("activetext");
+  }
+  else {
+    textMer.classList.add("activetext");
+    textMer.classList.remove("deactivetext");
+  }
 })
 venus.addEventListener('click', function(){
   textVen.classList.toggle("hiddentext");
-  textVen.classList.toggle("activetext");
   imgvenus.classList.toggle("pactive");
+  if( textVen.classList.contains("activetext")) {
+      textVen.classList.add("deactivetext");
+      textVen.classList.remove("activetext");
+  }
+  else {
+      textVen.classList.add("activetext");
+      textVen.classList.remove("deactivetext");
+  }
 })
+
 earth.addEventListener('click', function(){
   textEarth.classList.toggle("hiddentext");
-  textEarth.classList.toggle("activetext");
   imgearth.classList.toggle("pactive");
+  if ( textEarth.classList.contains("activetext")) {
+      textEarth.classList.add("deactivetext");
+     textEarth.classList.remove("activetext");
+  }
+  else {
+    textEarth.classList.add("activetext");
+    textEarth.classList.remove("deactivetext");
+  }
 })
 mars.addEventListener('click', function(){
   textMars.classList.toggle("hiddentext");
-  textMars.classList.toggle("activetext");
   imgmars.classList.toggle("pactive");
+  if (  textMars.classList.contains("activetext")) {
+        textMars.classList.add("deactivetext");
+      textMars.classList.remove("activetext");
+  }
+  else {
+    textMars.classList.add("activetext");
+    textMars.classList.remove("deactivetext");
+  }
+
 })
 jupiter.addEventListener('click', function(){
   textJupiter.classList.toggle("hiddentext");
-  textJupiter.classList.toggle("activetext");
-
+  if ( textJupiter.classList.contains("activetext")) {
+        textJupiter.classList.add("deactivetext");
+      textJupiter.classList.remove("activetext");
+  }
+  else {
+    textJupiter.classList.add("activetext");
+    textJupiter.classList.remove("deactivetext");
+  }
 })
 saturn.addEventListener('click', function(){
   textSaturn.classList.toggle("hiddentext");
-  textSaturn.classList.toggle("activetext");
+;
+  if (  textSaturn.classList.contains("activetext")) {
+        textSaturn.classList.add("deactivetext");
+      textSaturn.classList.remove("activetext");
+  }
+  else {
+    textSaturn.classList.add("activetext");
+    textSaturn.classList.remove("deactivetext");
+  }
 
 })
 uran.addEventListener('click', function(){
   textUran.classList.toggle("hiddentext");
-  textUran.classList.toggle("activetext");
+
+  if (   textUran.classList.contains("activetext")) {
+        textUran.classList.add("deactivetext");
+      textUran.classList.remove("activetext");
+  }
+  else {
+    textUran.classList.add("activetext");
+    textUran.classList.remove("deactivetext");
+  }
 })
 neptune.addEventListener('click', function(){
   textNeptune.classList.toggle("hiddentext");
-  textNeptune.classList.toggle("activetext");
 
+  if (    textNeptune.classList.contains("activetext")) {
+        textNeptune.classList.add("deactivetext");
+      textNeptune.classList.remove("activetext");
+  }
+  else {
+    textNeptune.classList.add("activetext");
+    textNeptune.classList.remove("deactivetext");
+  }
 })
